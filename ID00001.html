@@ -12,7 +12,7 @@
 
 <script>
     // get menu from static/ID00001.txt
-    fetch("static/ID00001.txt")
+    fetch("https://raw.githubusercontent.com/kojunseo/hambaya/master/static/ID00001.txt")
         .then(response => response.text())
         .then(text => document.getElementById("menu").innerHTML = text);
 </script>
