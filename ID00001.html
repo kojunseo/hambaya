@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유식당</title>
+</head>
+<body>
+    <h1>유식당</h1>
+    <h2 id="menu"></h2>
+</body>
+
+<script>
+    // get menu from static/ID00001.txt
+    fetch("static/ID00001.txt")
+        .then(response => response.text())
+        .then(text => document.getElementById("menu").innerHTML = text);
+</script>
+</html>
